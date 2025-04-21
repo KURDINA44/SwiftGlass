@@ -4,6 +4,8 @@
 
 ![Stable](https://img.shields.io/github/v/release/1998code/swiftglass?color=03A791&label=Stable)
 ![Beta](https://img.shields.io/github/v/release/1998code/swiftglass?include_prereleases&color=3A59D1&label=Beta)
+![Build Test](https://img.shields.io/github/actions/workflow/status/1998code/swiftglass/swift.yml?branch=main&style=flat&label=Build&color=%237AE2CF)
+![Swift Version](https://img.shields.io/badge/Swift-5.9/6.1-teal.svg)
 
 ![Platforms](https://img.shields.io/badge/Platforms-iOS%2015.0+%20|%20macOS%2014.0+%20|%20tvOS%2015.0+%20|%20watchOS%2010.0+%20|%20visionOS%201.0+-15437D.svg)
 ![License](https://img.shields.io/badge/License-MIT-C8ECFE.svg)
@@ -48,7 +50,6 @@
 | Xcode Latest | Minimum | SVT |
 | -- | -- | -- |
 | 16.3 | 15.0 | 5.9 |
-| ![Build Test](https://img.shields.io/github/actions/workflow/status/1998code/swiftglass/swift.yml?branch=main&style=flat&label=Build&color=%237AE2CF) | ![Build Test](https://img.shields.io/github/actions/workflow/status/1998code/swiftglass/swift.yml?branch=main&style=flat&label=Build&color=%237AE2CF) | ![Swift Version](https://img.shields.io/badge/Swift-5.9/6.1-teal.svg) |
 
 ![image](https://github.com/user-attachments/assets/99794cda-e879-4194-85fb-f6350ddf9db8)
 
