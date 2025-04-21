@@ -38,7 +38,9 @@
 
 iOS 15.0+, macOS 14.0+, watchOS 10.0+, tvOS 15.0+, and visionOS 1.0+
 
-Xcode 16.3 (Not Minimum Required)
+| Latest | Minimum | SVT |
+| -- | -- | -- |
+| 16.3 | 15.0 | 5.9 |
 
 ![image](https://github.com/user-attachments/assets/99794cda-e879-4194-85fb-f6350ddf9db8)
 
