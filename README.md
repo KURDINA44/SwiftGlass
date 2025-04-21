@@ -44,7 +44,7 @@
 | tvOS | 15.0+ |
 | visionOS | 1.0+ |
 
-| Xcode |
+| Xcode | | |
 | -- | -- | -- |
 | Latest | Minimum | SVT |
 | 16.3 | 15.0 | 5.9 |
