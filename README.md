@@ -39,13 +39,9 @@
 
 ## Tested Platforms and Environment
 
-| Platform | Version |
-| -- | -- |
-| iOS | 15.0+ |
-| macOS | 14.0+ |
-| watchOS | 10.0+ |
-| tvOS | 15.0+ |
-| visionOS | 1.0+ |
+| Platform | iOS | macOS | watchOS | tvOS | visionOS |
+| -- | -- | -- | -- | -- | -- |
+| Version | 15.0+ | 14.0+ | 10.0+ | 15.0+ | 1.0+ |
 
 | Xcode Latest | Minimum | SVT |
 | -- | -- | -- |
@@ -57,8 +53,8 @@
 
 ```
 Open /Demo/Demo.xcodeproj
-*To prevent resolving failed, please rename the root folder from SwiftGlass-xxx to SwiftGlass
 ```
+>⚠️ To prevent resolving failed, please rename the root folder from SwiftGlass-xxx to SwiftGlass
 
 ## Installation (on your project)
 
@@ -66,9 +62,8 @@ Open /Demo/Demo.xcodeproj
 
 Add SwiftGlass to your project through Swift Package Manager 
 
+>PROJECT > Package Dependencies > +
 ```
-PROJECT > Package Dependencies > +
-
 https://github.com/1998code/SwiftGlass.git
 ```
 
