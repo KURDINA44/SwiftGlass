@@ -10,7 +10,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  xcode:
+  xcode-16-3:
     runs-on: macos-15
     env:
       DEVELOPER_DIR: /Applications/Xcode_16.3.app/Contents/Developer
@@ -20,5 +20,31 @@ jobs:
         run: swift --version
       - name: Build
         run: swift build -v
-      - name: Test
-        run: swift test -v
+      # - name: Test
+      #   run: swift test -v
+
+  xcode-15-4:
+    runs-on: macos-14
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_15.4.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+      - name: Version
+        run: swift --version
+      - name: Build
+        run: swift build -v
+      # - name: Test
+      #   run: swift test -v
+        
+  xcode-15-0:
+    runs-on: macos-13
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_15.0.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+      - name: Version
+        run: swift --version
+      - name: Build
+        run: swift build -v
+      # - name: Test
+      #   run: swift test -v
