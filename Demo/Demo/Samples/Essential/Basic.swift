@@ -102,7 +102,7 @@ struct Basic: View {
                     .scaledToFill()
             } placeholder: {
                 ProgressView()
-            }.opacity(0.6)
+            }.opacity(0.3)
             .ignoresSafeArea()
         }
     }

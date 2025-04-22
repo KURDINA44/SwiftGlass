@@ -33,11 +33,9 @@ struct Input: View {
     }
 }
 
-#Preview("Light") {
-    Input()
-}
-
-#Preview("Dark") {
+@available(iOS 17.0, *)
+#Preview("Dark", traits: .landscapeLeft) {
     Input()
         .preferredColorScheme(.dark)
+        
 }
